@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Impostor: Silence</title>
+    <title>Privacy Policy - Impostor: Silence</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -12,61 +12,118 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
-            background-color: #f9f9f9;
+            background-color: #f4f4f7;
         }
         .container {
             background-color: #fff;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
-        h1 { color: #d32f2f; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #1a1a1a; margin-top: 30px; }
-        p { margin-bottom: 16px; }
-        ul { margin-bottom: 16px; }
-        li { margin-bottom: 8px; }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #666; text-align: center; }
+        .lang-nav {
+            text-align: right;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        .lang-nav a {
+            color: #d32f2f;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        h1 { color: #d32f2f; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; font-size: 2em; }
+        h2 { color: #1a1a1a; margin-top: 35px; font-size: 1.4em; }
+        p { margin-bottom: 18px; }
+        ul { margin-bottom: 18px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 60px 0; }
+        .footer { margin-top: 50px; font-size: 0.85em; color: #888; text-align: center; }
+        .highlight { color: #d32f2f; font-weight: 600; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            h1 { font-size: 1.6em; }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Política de Privacidad</h1>
-    <p><strong>Última actualización:</strong> 3 de febrero de 2026</p>
+    <nav class="lang-nav">
+        <a href="#spanish">Español</a>
+        <a href="#english">English</a>
+    </nav>
 
-    <p>En <strong>Frostnode</strong>, valoramos su privacidad. Esta Política de Privacidad describe cómo <strong>Impostor: Silence</strong> maneja la información técnica y los datos locales del usuario.</p>
+    <section id="spanish">
+        <h1>Política de Privacidad</h1>
+        <p><strong>Última actualización:</strong> 3 de febrero de 2026</p>
 
-    <h2>1. Información que procesamos</h2>
-    <ul>
-        <li><strong>Datos de Juego (Locales):</strong> Los nombres de los jugadores, configuraciones de temas y estados de desbloqueo se almacenan <strong>exclusivamente de forma local</strong> en el dispositivo mediante el sistema SharedPreferences. Frostnode no tiene acceso a estos datos ni los transmite a servidores externos.</li>
-        <li><strong>Identificadores de Publicidad:</strong> Para el funcionamiento de anuncios y recompensas, utilizamos servicios de terceros (<strong>Google AdMob</strong>) que pueden recopilar identificadores de publicidad seudónimos del dispositivo (como el ID de publicidad de Android) para personalizar la experiencia publicitaria.</li>
-    </ul>
+        <p>En <strong>Frostnode</strong>, la privacidad de nuestros usuarios es una prioridad. Esta Política de Privacidad describe el tratamiento de la información en la aplicación <strong>Impostor: Silence</strong>.</p>
 
-    <h2>2. Uso de la Información</h2>
-    <p>Los datos locales se utilizan únicamente para mantener la persistencia de la configuración del usuario y el flujo de la partida. Los identificadores técnicos son procesados por los proveedores de anuncios para proporcionar contenido relevante y habilitar el sistema de recompensas (desbloqueo de categorías mediante videos).</p>
+        <h2>1. Información que procesamos</h2>
+        <ul>
+            <li><strong>Datos de Juego (Locales):</strong> Los nombres de los jugadores, configuraciones de temas y estados de desbloqueo se almacenan <span class="highlight">exclusivamente de forma local</span> en el dispositivo mediante SharedPreferences. Frostnode no tiene acceso a estos datos ni los almacena en servidores externos.</li>
+            <li><strong>Identificadores Técnicos:</strong> Para el funcionamiento de anuncios y recompensas, utilizamos servicios de terceros (<strong>Google AdMob</strong>) que pueden recopilar identificadores de publicidad seudónimos (como el ID de publicidad de Android) para personalizar la experiencia publicitaria.</li>
+        </ul>
 
-    <h2>3. Proveedores de Servicios (Terceros)</h2>
-    <p>La aplicación integra el SDK de <strong>Google AdMob</strong>. Estos terceros pueden recopilar y procesar datos técnicos de acuerdo con sus propias políticas de privacidad. Puede consultar la política de Google aquí: <a href="https://policies.google.com/privacy" target="_blank">Políticas de Google</a>.</p>
+        <h2>2. Uso de la Información</h2>
+        <p>Los datos locales se utilizan solo para mantener el flujo de la partida y las preferencias del usuario. Los identificadores técnicos permiten mostrar anuncios relevantes y habilitar el sistema de recompensas (desbloqueo de categorías mediante video).</p>
 
-    <h2>4. Derechos del Usuario y Supresión de Datos</h2>
-    <p>Dado que no almacenamos datos en servidores, el usuario tiene el control total sobre su información:</p>
-    <ul>
-        <li>Puede eliminar todos los datos de juego en cualquier momento borrando el caché o los datos de la aplicación desde los ajustes de su sistema Android.</li>
-        <li>Al desinstalar la aplicación, todos los datos locales se eliminan de forma permanente.</li>
-    </ul>
+        <h2>3. Servicios de Terceros</h2>
+        <p>La aplicación integra el SDK de <strong>Google AdMob</strong>. Google puede recopilar datos técnicos de acuerdo con su propia política: <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidad de Google</a>.</p>
 
-    <h2>5. Privacidad de Menores</h2>
-    <p>Impostor: Silence está recomendado para mayores de 13 años. No recopilamos conscientemente información de identificación personal de menores. Si es padre o tutor y tiene conocimiento de que un menor a su cargo nos ha proporcionado datos técnicos inapropiados, contáctenos para tomar las medidas necesarias.</p>
+        <h2>4. Derechos del Usuario y Borrado de Datos</h2>
+        <p>El usuario tiene control total sobre sus datos locales:</p>
+        <ul>
+            <li>Puede eliminar toda la información borrando el caché o los datos de la aplicación desde los ajustes de Android.</li>
+            <li>Al desinstalar la aplicación, todos los datos locales se eliminan de forma permanente e irreversible.</li>
+        </ul>
 
-    <h2>6. Seguridad</h2>
-    <p>Implementamos las medidas de seguridad estándar de la plataforma Android para proteger el almacenamiento local de la aplicación, aunque recordamos que ningún método de transmisión o almacenamiento electrónico es 100% seguro.</p>
+        <h2>5. Privacidad de Menores</h2>
+        <p>Impostor: Silence está recomendado para mayores de 13 años. No recopilamos conscientemente información personal de menores de edad. Si detectamos datos técnicos inapropiados de un menor, tomaremos medidas para su eliminación.</p>
 
-    <h2>7. Contacto</h2>
-    <p>Para cualquier duda sobre esta política, puede contactarnos en: <br>
-    <strong>frostnode.dev@gmail.com</strong></p>
+        <h2>6. Contacto</h2>
+        <p>Para consultas sobre esta política: <br>
+        <strong>frostnode.dev@gmail.com</strong></p>
+    </section>
+
+    <hr>
+
+    <section id="english">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated:</strong> February 3, 2026</p>
+
+        <p>At <strong>Frostnode</strong>, user privacy is our top priority. This Privacy Policy describes how information is handled within the <strong>Impostor: Silence</strong> application.</p>
+
+        <h2>1. Information We Process</h2>
+        <ul>
+            <li><strong>Game Data (Local):</strong> Player names, theme settings, and unlock states are stored <span class="highlight">exclusively local</span> on the device using SharedPreferences. Frostnode does not have access to this data nor transmits it to external servers.</li>
+            <li><strong>Technical Identifiers:</strong> For ads and rewards functionality, we use third-party services (<strong>Google AdMob</strong>) that may collect pseudonymous advertising identifiers (such as the Android Advertising ID) to personalize the advertising experience.</li>
+        </ul>
+
+        <h2>2. Use of Information</h2>
+        <p>Local data is used solely to maintain game flow and user preferences. Technical identifiers allow us to deliver relevant ads and enable the reward system (unlocking categories via video ads).</p>
+
+        <h2>3. Third-Party Services</h2>
+        <p>The app integrates the <strong>Google AdMob SDK</strong>. Google may collect technical data according to its own policy: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+
+        <h2>4. User Rights and Data Deletion</h2>
+        <p>The user has full control over their local data:</p>
+        <ul>
+            <li>You can delete all information by clearing the app cache or data in your Android system settings.</li>
+            <li>Uninstalling the app permanently and irreversibly deletes all local data.</li>
+        </ul>
+
+        <h2>5. Children’s Privacy</h2>
+        <p>Impostor: Silence is recommended for ages 13 and up. We do not knowingly collect personal information from minors. If we detect inappropriate technical data from a minor, we will take steps to remove it.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>For questions regarding this policy: <br>
+        <strong>frostnode.dev@gmail.com</strong></p>
+    </section>
 
     <div class="footer">
-        <p>© 2026 Frostnode. Todos los derechos reservados.</p>
+        <p>© 2026 Frostnode. All rights reserved. | Todos los derechos reservados.</p>
     </div>
 </div>
 
